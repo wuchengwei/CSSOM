@@ -11,6 +11,8 @@ exports.files = [
 	"CSSKeyframesRule",
 	"CSSKeyframeRule",
 	"CSSDocumentRule",
+	"CSSValue",
+	"CSSValueExpression",
 	"parse",
 	"clone"
 ];
