@@ -39,7 +39,8 @@ describe('CSSStyleDeclaration', function() {
 		expect(d.getPropertyPriority('width')).toBe('important');
 		expect(d.getPropertyPriority('position')).toBe('');
 
-		d.setProperty('color', 'green');
+		d.setProperty('color', 'green', "");
+		console.log(d);
 		d.removeProperty('width');
 
 		expect(d.cssText).toBe('color: green;');
