@@ -7,7 +7,7 @@ function readFile(path) {
 }
 
 function stripCommonJS(text) {
-	return text.replace(/\/\/\.CommonJS(?:.|\n)*?\/\/\/CommonJS/g, "");
+	return text.replace(/\/\/\.CommonJS(?:.|\s)*?\/\/\/CommonJS/g, "");
 }
 
 desc("Packages lib files into the one huge");
